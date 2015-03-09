@@ -1,0 +1,29 @@
+static public List<float> Unique(List<float> list)
+        {
+            List<float> newList = new List<float>();
+            foreach(float value in list)
+            {
+                if (newList.Contains(value))
+                {
+                }
+                else
+                {
+                    newList.Add(value);
+                }
+            }
+
+            return newList;
+        }
+        static public List<float> Intersect(List<float> list1, List<float> list2)
+        {
+            List<float> newList = new List<float>();
+
+            foreach(float value in list1)
+            {
+                if(list2.Contains(value))
+                {
+                    newList.Add(value);
+                }
+            }
+            return newList;
+        }
